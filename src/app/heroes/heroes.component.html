@@ -16,12 +16,14 @@
 </ul>
 
 <!-- hero detail  -->
-<div *ngIf="selectedHero">
+<!-- <div *ngIf="selectedHero">
     <h2>{{selectedHero.name}} details</h2>
     <div><span>id: </span>{{selectedHero.id}}</div>
     <div>
         <label for="hero-name">Hero name: </label>
         <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
     </div>
-</div>
+</div> -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
 
